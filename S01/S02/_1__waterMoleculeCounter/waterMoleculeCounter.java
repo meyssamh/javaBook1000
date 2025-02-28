@@ -18,6 +18,7 @@ public class waterMoleculeCounter {
 
         double moleculeCount = pouredAmount * liter / molecule;
 
-        System.out.println("There is " + moleculeCount + " molecules in " + pouredAmount + " liter water.");
+        System.out.println("There is " + moleculeCount +
+                " molecules in " + pouredAmount + " liter water.");
     }
 }
