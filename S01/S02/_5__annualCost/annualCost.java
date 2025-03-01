@@ -14,15 +14,17 @@ public class annualCost {
 
         System.out.println("Please enter the number of specialists:");
 
-        int specialistsCount = new Scanner(System.in).nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            int specialistsCount = scanner.nextInt();
 
-        long totalSalaryCosts = salary * specialistsCount * 12;
-        double totalHigherSalaryCosts = totalSalaryCosts + totalSalaryCosts * 0.135;
+            long totalSalaryCosts = salary * specialistsCount * 12;
+            double totalHigherSalaryCosts = totalSalaryCosts + totalSalaryCosts * 0.135;
 
-        double costDifference = totalHigherSalaryCosts - totalSalaryCosts;
+            double costDifference = totalHigherSalaryCosts - totalSalaryCosts;
 
-        System.out.println("Total salary costs is " + totalSalaryCosts +
-                " and if the manager raises the salaries the difference will be " + costDifference +
-                " with the total salary costs of " + totalHigherSalaryCosts + ".");
+            System.out.println("Total salary costs is " + totalSalaryCosts +
+                    " and if the manager raises the salaries the difference will be " + costDifference +
+                    " with the total salary costs of " + totalHigherSalaryCosts + ".");
+        }
     }
 }

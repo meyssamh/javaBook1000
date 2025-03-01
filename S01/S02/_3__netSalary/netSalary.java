@@ -10,14 +10,16 @@ public class netSalary {
     public static void main(String[] args) {
         System.out.println("Please enter your salary:");
 
-        double salary = new Scanner(System.in).nextDouble();
+        try (Scanner scanner = new Scanner(System.in)) {
+            double salary = scanner.nextDouble();
 
-        double taxAmount = salary * 0.1;
-        double insuranceAmount = salary * 0.07;
-        double netSalary = salary - taxAmount - insuranceAmount;
+            double taxAmount = salary * 0.1;
+            double insuranceAmount = salary * 0.07;
+            double netSalary = salary - taxAmount - insuranceAmount;
 
-        System.out.println("Your tax amount is " + taxAmount +
-                ", your insurance amount is " + insuranceAmount +
-                " and your net salary is " + netSalary + ".");
+            System.out.println("Your tax amount is " + taxAmount +
+                    ", your insurance amount is " + insuranceAmount +
+                    " and your net salary is " + netSalary + ".");
+        }
     }
 }

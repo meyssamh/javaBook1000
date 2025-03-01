@@ -14,11 +14,13 @@ public class waterMoleculeCounter {
 
         System.out.println("Please type in the liter amount:");
 
-        long pouredAmount = new Scanner(System.in).nextLong();
-
-        double moleculeCount = pouredAmount * liter / molecule;
-
-        System.out.println("There is " + moleculeCount +
-                " molecules in " + pouredAmount + " liter water.");
+        try (Scanner scanner = new Scanner(System.in)) {
+            long pouredAmount = scanner.nextLong();
+            
+            double moleculeCount = pouredAmount * liter / molecule;
+            
+            System.out.println("There is " + moleculeCount +
+            " molecules in " + pouredAmount + " liter water.");
+        }
     }
 }

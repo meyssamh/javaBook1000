@@ -16,6 +16,8 @@ public class inflationRate {
         double previousYear = scanner.nextDouble();
         double currentYear = scanner.nextDouble();
 
+        scanner.close();
+
         double inflationRate = (currentYear - previousYear) / previousYear;
         double nextYear = currentYear + currentYear * inflationRate;
 

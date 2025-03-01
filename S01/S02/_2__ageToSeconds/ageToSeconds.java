@@ -12,8 +12,10 @@ public class ageToSeconds {
 
         System.out.println("Please type in your age:");
 
-        double ageInSeconds = new Scanner(System.in).nextInt() * yearInSeconds;
-
-        System.out.println("You are " + ageInSeconds + " seconds old!");
+        try (Scanner scanner = new Scanner(System.in)) {
+            double ageInSeconds = scanner.nextInt() * yearInSeconds;
+            
+            System.out.println("You are " + ageInSeconds + " seconds old!");
+        }
     }
 }
