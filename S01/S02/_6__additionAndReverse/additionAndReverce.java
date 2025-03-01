@@ -15,7 +15,7 @@ public class additionAndReverce {
         int secondDigit = number % 10;
 
         int addition = firstDigit + secondDigit;
-        int reverse = Integer.parseInt(String.valueOf(secondDigit) + String.valueOf(firstDigit));
+        int reverse = secondDigit * 10 + firstDigit;
 
         System.out.println("The addition of numbers is equal " + addition +
                 " and the reverse of the number is  equal to " + reverse + ".");
