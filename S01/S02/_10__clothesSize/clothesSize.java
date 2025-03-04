@@ -1,4 +1,4 @@
-package _10__cloathSize;
+package _10__clothesSize;
 
 // Write a program that reads the height, weight and the age of
 // a person and calculated the size of his clothes as follows:
@@ -12,7 +12,7 @@ package _10__cloathSize;
 
 import java.util.Scanner;
 
-public class cloathSize {
+public class clothesSize {
     public static void main(String[] args) {
         System.out.println("Please enter height, weight and age:");
 
