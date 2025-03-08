@@ -1,12 +1,12 @@
 package _12__volCalculator;
 
-import java.util.Scanner;
-
 // Write a program that reads two numbers from the input
 // (the first number represents the resistance of an electrical
 // circuit and the second number represents its current) and
 // alculates and displays the voltage using the following formula.
 // Current * Resistance = Voltage
+
+import java.util.Scanner;
 
 public class volClaculator {
     public static void main(String[] args) {
