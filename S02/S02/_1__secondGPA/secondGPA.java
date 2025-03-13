@@ -1,10 +1,10 @@
 package _1__secondGPA;
 
-import java.util.Scanner;
-
 // Write a program that reads the student number and
 // GPA of N students from the input, finds the student
 // with the second highest GPA, and outputs it.
+
+import java.util.Scanner;
 
 public class secondGPA {
     public static void main(String[] args) {
@@ -24,11 +24,11 @@ public class secondGPA {
             System.out.println("Please enter a number greater than 1!");
 
             scanner.close();
-            
+
             return;
         }
 
-        for(int i = 1; i <= students; i++) {
+        for (int i = 1; i <= students; i++) {
             System.out.println("Please enter the student id number:");
 
             int id = scanner.nextInt();
@@ -50,6 +50,7 @@ public class secondGPA {
 
         scanner.close();
 
-        System.out.println("The student with the second highest GPA hasid number of " + secondStudent + " and GPA of " + secondGpa + ".");
+        System.out.println("The student with the second highest GPA hasid number of "
+                + secondStudent + " and GPA of " + secondGpa + ".");
     }
 }
