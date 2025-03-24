@@ -7,7 +7,7 @@ package _13__resistance;
 
 import java.util.Scanner;
 
-public class resistance {
+public class Resistance {
     public static void main(String[] args) {
         System.out.println("Please enter resistances R1, R2 and R3:");
         
